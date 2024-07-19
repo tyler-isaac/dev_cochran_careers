@@ -60,6 +60,10 @@ a.nav-link {
   color: #e82430 !important;
 }
 
+.nav-link[aria-current="page"] {
+  color: #e82430 !important;
+}
+
 .dropdown-item {
   text-transform: uppercase;
 }
@@ -70,7 +74,7 @@ a.nav-link {
 
 .nav-hr {
   background: #abaeaa;
-  border: 1.5px solid #abaeaa;
+  border: 2px solid #abaeaa;
   width: 96%;
   margin: 0 auto;
   padding: 0;

@@ -59,44 +59,6 @@
   background-color: #f2f2f2;
 }
 
-/* Slider */
-/* external css: flickity.css */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-.carousel {
-  background: #eee;
-}
-
-.carousel-cell {
-  margin-right: 20px;
-  overflow: hidden;
-}
-
-.carousel-cell img {
-  display: block;
-  height: 200px;
-  border-radius: 20px;
-}
-
-.carousel-cell iframe {
-  border-radius: 20px;
-}
-
-button.flickity-button.flickity-prev-next-button.next {
-  display: none;
-}
-
-button.flickity-button.flickity-prev-next-button.previous {
-  display: none;
-}
-/* Slider */
-
 @media only screen and (min-width: 480px) {
   .header-container {
     top: 230px;
@@ -108,10 +70,6 @@ button.flickity-button.flickity-prev-next-button.previous {
   .header-container {
     top: 280px;
     width: 670px;
-  }
-
-  .carousel-cell img {
-    height: 400px;
   }
 
   .item-order {
@@ -170,7 +128,7 @@ button.flickity-button.flickity-prev-next-button.previous {
 
 @media only screen and (min-width: 1920px) {
   .header-background {
-    height: 1460px;
+    height: 1500px;
   }
 
   .header-container {

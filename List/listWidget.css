@@ -1,11 +1,11 @@
-ul {
+.body-container ul {
     margin: 0;
     padding-top: 15px;
     padding-left: 20px;
     text-align: start;
   }
   
-  li {
+  .body-container li {
     line-height: 1.1;
     margin: 0px 0;
     padding: 10px 0 0;
@@ -13,7 +13,7 @@ ul {
     font-size: 18px;
   }
   
-  li::marker {
+  .body-container li::marker {
     color: #e82430;
   }
   
