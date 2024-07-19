@@ -1,0 +1,182 @@
+.row1 {
+  padding-top: 80px;
+}
+
+.row1 h1 {
+  text-align: center;
+}
+
+.row2 {
+  padding: 30px 0 0;
+}
+
+.row2-container div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.row2-container {
+  background: #efefef;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.bigNumber {
+  font-size: 200px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 0.8;
+}
+
+.bigText {
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.row3 {
+  padding: 25px 0;
+}
+
+.row3-container div {
+  background: #efefef;
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.row4 {
+  padding: 20px 0 90px;
+}
+
+.th {
+  font-size: 40px;
+  position: relative;
+  bottom: 20px;
+}
+
+.plus {
+  position: relative;
+  bottom: 5px;
+}
+
+.footer-hr {
+  border: 1.5px solid #abaeaa;
+  background-color: #abaeaa;
+  width: 94%;
+  display: block;
+  margin: 4rem auto 2rem;
+}
+
+.row5 {
+  background: #efefef;
+  padding: 40px 0;
+}
+
+/* dot list */
+.dot-between {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.word {
+  position: relative;
+  white-space: nowrap;
+}
+
+.dot {
+  padding: 3px 4px 0;
+  font-size: 13px;
+  color: #e82430;
+}
+/* dot list */
+
+@media only screen and (min-width: 480px) {
+  .row3-container div {
+    padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row2-container {
+    padding: 40px;
+  }
+
+  .row3-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .row3-container div {
+    height: 178px;
+    width: 248px;
+  }
+
+  .row2-container div:first-child {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .bigText {
+    text-align: start;
+    flex-basis: 290px;
+  }
+
+  .bigNumber {
+    text-align: start;
+    flex-basis: 240px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .row3-container div {
+    height: 178px;
+    width: 318px;
+    padding: 50px;
+  }
+
+  .row3 {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .row3-container div {
+    height: 178px;
+    width: 353px;
+    padding: 50px 70px;
+  }
+
+  .row4 {
+    padding: 20px 50px 90px;
+  }
+
+  .dot-between {
+    padding: 0 42px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .row4 {
+    padding: 20px 140px 90px;
+  }
+
+  .body-container {
+    max-width: 1000px !important;
+  }
+}

@@ -1,0 +1,55 @@
+.picAndText {
+  text-align: center;
+  padding: 40px 0 0;
+}
+
+.picAndText-container {
+  padding: 0 0 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .picAndText {
+    text-align: start;
+  }
+
+  .picAndText-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    --gap: 30px;
+    gap: var(--gap);
+  }
+
+  .picAndText-container div {
+    flex-basis: 315px;
+  }
+
+  .item-order {
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .picAndText-container div {
+    flex-basis: 410px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .picAndText-container div {
+    flex-basis: 490px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .picAndText-container div {
+    flex-basis: 590px;
+  }
+
+  .picAndText-container {
+    --gap: 50px;
+    gap: var(--gap);
+  }
+}

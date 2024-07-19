@@ -1,0 +1,310 @@
+.row1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.row1 div {
+  padding: 25px 0;
+}
+
+.row2 {
+  padding: 10px 0 0;
+}
+
+.row2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row2-container div {
+  padding: 30px;
+  margin: 45px 0;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 290px;
+  height: 320px;
+}
+
+.row2-container img {
+  display: block;
+  width: 155px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 80px;
+  margin-bottom: -50px;
+}
+
+.background-color {
+  background-color: #f2f2f2;
+  padding: 0 0 75px 0;
+  margin-bottom: 50px;
+}
+
+.row3 {
+  text-align: center;
+}
+
+.row3-container div {
+  padding: 15px 0;
+}
+
+.row4 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row4-container {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 290px;
+  height: 600px;
+  padding: 30px;
+  margin: 40px 0;
+}
+
+.row4-container img {
+  display: block;
+  width: 155px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 80px;
+  margin-bottom: -50px;
+}
+
+.row5 {
+  text-align: center;
+  padding: 80px 0 0;
+}
+
+.row6 {
+  padding: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row6-container {
+}
+
+.row6-container div {
+  padding: 30px;
+  margin: 95px 0;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 290px;
+  height: 640px;
+}
+
+.row6-container img {
+  display: block;
+  width: 155px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 80px;
+  margin-bottom: -50px;
+}
+
+.row7 {
+  text-align: center;
+}
+
+.row8,
+.row9 {
+  text-align: center;
+}
+
+.row9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row9 div {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 40px 0;
+  padding: 30px;
+  width: 290px;
+  height: 380px;
+  text-transform: uppercase;
+}
+
+.row10 img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.row10-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  --gap: 15px;
+  gap: var(--gap);
+}
+
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+  .row2-container,
+  .row6-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    --gap: 30px;
+    gap: var(--gap);
+    justify-content: center;
+  }
+  .row2-container div,
+  .row6-container div {
+    flex-basis: 40%;
+  }
+
+  .row6-container div {
+    height: 710px;
+  }
+
+  .row4 {
+    text-align: start;
+    align-items: flex-end;
+  }
+
+  .row4-container {
+    width: 600px;
+    height: 310px;
+  }
+
+  .row4-container img {
+    bottom: -50px;
+    right: 295px;
+    margin-bottom: -50px;
+  }
+
+  .row4-container div:last-child {
+    margin: -150px auto 0 90px;
+  }
+
+  .row5 {
+    text-align: center;
+    margin: 0px 0 40px;
+  }
+
+  .row6-container div {
+    margin: 45px 0;
+  }
+
+  .row6 {
+    text-align: center;
+  }
+
+  .row7-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    --gap: 30px;
+    gap: var(--gap);
+  }
+
+  .row7-container div {
+    flex: 1;
+  }
+
+  .row9 div {
+    width: 100%;
+    height: 200px;
+  }
+
+  .row7 {
+    text-align: start;
+  }
+
+  .p-margin {
+    padding: 0 60px;
+  }
+
+  .row10 img {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .row2 {
+    padding: 30px 0 0;
+  }
+
+  .row3 {
+    margin-top: 70px;
+  }
+
+  .row4-container {
+    width: 770px;
+    height: 250px;
+  }
+
+  .row4-container img {
+    bottom: -12px;
+    right: 388px;
+  }
+
+  .row5 {
+    text-align: center;
+    margin: 70px 0 40px;
+  }
+
+  .row2-container div,
+  .row6-container div {
+    flex-basis: 260px;
+  }
+
+  .row7 {
+    margin-top: 70px;
+  }
+
+  .row10 img {
+    width: 130px;
+  }
+
+  .p-margin {
+    padding: 0 80px 50px;
+  }
+
+  .row10 p {
+    padding: 20px 0 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .row4-container img {
+    bottom: -6px;
+    right: 455px;
+  }
+
+  .row2-container, .row6-container {
+    padding: 0 80px;
+}
+
+  .row4-container {
+    width: 920px;
+    height: 230px;
+    margin: 30px 0;
+  }
+
+  .row4 {
+    padding-bottom: 90px;
+  }
+
+  .row9 div {
+    padding: 40px 100px;
+  }
+
+  .row10 img {
+    width: 160px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+}

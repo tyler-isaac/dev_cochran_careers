@@ -1,0 +1,48 @@
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.carousel {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-item {
+  flex: 0 0 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.carousel-item iframe {
+  width: 100%;
+  height: 315px; /* Adjust based on desired aspect ratio */
+  display: block;
+  border-radius: 20px; /* Added border radius */
+  overflow: hidden; /* Ensure rounded corners are respected */
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 90%;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Footer</title>
+    <link href="./footer.css" rel="stylesheet" type="text/css" />
+  </head>
+  <div class="footer-container">
+    <div>
+      <hr class="footer-hr"/>
+    </div>
+     <div class="footer-flex">
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./why-cochran.html">Why #1 Cochran</a>
+        <a href="./culture.html">Culture</a>
+        <a href="./benefits.html">Benefits</a>
+        <a href="./about-us.html">About Us</a>
+        <a href="./technicians.html">Technicians</a>
+        <a href="./search-jobs.html">Search Jobs</a>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+    </div>
+    <div>
+      <i>
+        <p>COPYRIGHT © 2023-<span id="year"></span> #1 COCHRAN</p>
+      </i>
+    </div>
+  </div>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script> 
+  </div>
+</html>

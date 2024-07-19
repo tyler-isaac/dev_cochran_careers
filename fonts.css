@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+main {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+h1 {
+  font-weight: 900 !important;
+  padding: 20px 0 0 !important;
+  letter-spacing: -1.75px !important;
+  color: #000 !important;
+  font-size: 36px !important;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 34px;
+  margin: 20px 0 0;
+  letter-spacing: 0.5px;
+  letter-spacing: -0.75px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #e82430;
+}
+
+p {
+  line-height: 1.1;
+  margin: 0px 0;
+  padding: 20px 0 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -0.75px;
+}
+
+h5 {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.1px;
+  line-height: 1.1;
+}
+
+.text-red {
+  color: #e82430;
+}
+.text-black {
+  color: #000;
+}
+.text-white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.hr1 {
+  border: 2px solid #abaeaa;
+  background-color: #abaeaa;
+  width: 100%;
+  display: block;
+  margin: 4rem auto;
+}
+
+.text-align-start {
+  text-align: start;
+}

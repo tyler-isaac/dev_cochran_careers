@@ -1,0 +1,38 @@
+ul {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 20px;
+    text-align: start;
+  }
+  
+  li {
+    line-height: 1.1;
+    margin: 0px 0;
+    padding: 10px 0 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  li::marker {
+    color: #e82430;
+  }
+  
+  .sub-list {
+    padding-top: 0px;
+    list-style-type: square
+  }
+
+  .sub-list li:before {
+    content: "\2610";
+    color: #e82430;
+    font-size: 7px;
+    position: relative;
+    bottom: 4px;
+    margin-right: 5px;
+    font-weight: 900;
+  }
+
+  .sub-list li {
+    list-style: none;
+    padding-top: 4px;
+  }

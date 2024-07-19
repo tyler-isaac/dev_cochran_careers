@@ -1,0 +1,9 @@
+.row1, .row2 {
+    padding: 80px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        margin-bottom: -350px;
+    }
+}

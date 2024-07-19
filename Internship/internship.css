@@ -1,0 +1,117 @@
+.row1 {
+  text-align: center;
+}
+
+.row1 h2 {
+  padding: 0 0 15px;
+}
+
+.row2 {
+  background-color: #fff;
+  text-align: start;
+}
+
+.row2 ::marker,
+.row3 ::marker {
+  color: #e82430;
+}
+
+.row2 ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.row2 li,
+.row3 li {
+  line-height: 1.1;
+  margin: 0px 0;
+  padding: 20px 0 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.row3 {
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.row3-container div {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 290px;
+  height: 460px;
+  padding: 30px;
+  margin: 120px 0;
+}
+
+.row3-container img {
+  display: block;
+  width: 155px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 110px;
+  margin-bottom: -70px;
+}
+
+.row3 ul {
+  list-style-position: inside;
+  padding: 0 0 0 2px;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.row3 li {
+  text-align: center;
+}
+
+.row4 {
+  margin-top: -80px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .row3-container {
+    display: flex;
+    --gap: 50px;
+    gap: var(--gap);
+    justify-content: center;
+  }
+
+  .row3-container div {
+    width: 330px;
+    height: 430px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .row2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 890px;
+  }
+
+  .row3 {
+    padding-top: 10px;
+  }
+
+  .row3-container {
+    --gap: 70px;
+    gap: var(--gap);
+  }
+
+  .row3-container div {
+    width: 370px;
+  }
+
+  .row4 {
+    display: block;
+    margin: -80px auto 0;
+    max-width: 890px;
+    padding: 0 100px;
+    padding: 0 60px;
+  }
+}

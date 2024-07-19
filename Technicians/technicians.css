@@ -1,0 +1,86 @@
+.row1 {
+  padding: 80px 0;
+}
+
+.row1 h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.row1 div {
+  text-align: center;
+}
+
+.row1 div:first-child {
+  margin-top: 30px;
+}
+
+.row1 .btn1-container a {
+  margin: 20px auto 0;
+}
+
+.row2 {
+  background: #f2f2f2;
+  padding: 60px 0;
+}
+
+.row2 p {
+  text-align: start;
+}
+
+.row2 div {
+  padding: 30px 0;
+}
+
+.body-container img {
+  margin: 30px auto;
+}
+
+.row3 p {
+  text-align: start;
+}
+
+.row3 h2 {
+  margin: 0;
+}
+
+.row4 {
+  background: #f2f2f2;
+  padding: 80px 0;
+}
+
+.row4 h2,
+.row4 p {
+  text-align: center;
+}
+
+.picAndText-container p {
+  text-align: start;
+}
+
+.row5 {
+  padding: 80px 0;
+}
+
+.row5 h2,
+.row5 .btn1-container {
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .row1 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    --gap: 30px;
+    gap: var(--gap);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
