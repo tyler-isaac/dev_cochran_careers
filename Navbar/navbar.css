@@ -44,24 +44,21 @@ button.navbar-toggler {
   box-sizing: unset;
 }
 
-.nav-link {
+/* .nav-link {
   text-transform: uppercase;
   color: #000;
-  font-weight: 800;
-  
-}
+} */
 
 a.nav-link {
   font-size: 16px !important;
+  font-weight: 800 !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  text-transform: uppercase;
 }
 
 .nav-link:focus,
 .nav-link:hover,
 .nav-link.show {
-  color: #e82430 !important;
-}
-
-.nav-link[aria-current="page"] {
   color: #e82430 !important;
 }
 
