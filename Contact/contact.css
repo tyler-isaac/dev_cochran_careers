@@ -6,6 +6,14 @@
   justify-content: center;
 }
 
+iframe {
+  height: 515px !important;
+}
+
+#last_3 {
+  margin-left: 0px !important;
+}
+
 #map-container {
   width: 80%;
   height: 80%;
@@ -67,6 +75,10 @@
   header {
     margin-bottom: -170px;
   }
+
+  iframe {
+    height: 415px !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -76,6 +88,10 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+  }
+
+  iframe {
+    height: 465px !important;
   }
 
   .location-wrapper div:nth-child(2) {
