@@ -8,6 +8,7 @@ button.btn-close {
   position: fixed;
   right: 25px;
   top: 25px;
+  z-index: 99999999;
 }
 
 .parts-logo {
