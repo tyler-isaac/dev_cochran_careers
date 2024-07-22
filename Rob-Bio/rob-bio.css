@@ -24,6 +24,12 @@
   align-items: center;
 }
 
+.row2-container ul {
+  text-align: center !important;
+  list-style-position: inside !important;
+  padding-left: 0px !important;
+}
+
 .row2-container div {
   padding: 30px;
   margin: 45px 0;
@@ -51,13 +57,17 @@
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    margin-bottom: -200px;
+  }
+
   .row2-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    --gap: 25px;
+    --gap: 20px;
     gap: var(--gap);
   }
 
@@ -73,7 +83,17 @@
 @media only screen and (min-width: 992px) {
   .row2-container div {
     width: 260px;
-    height: 740px;
+    height: 580px;
+  }
+
+  .row2-container div:nth-child(4) {
+    height: 580px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .row1 h6 {
+    padding: 20px 40px;
   }
 
   .row2-container div:nth-child(4),
@@ -82,8 +102,8 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .row1 h6 {
-    padding: 20px 40px;
+@media only screen and (min-width: 1400px) {
+  header {
+    margin-bottom: 0;
   }
 }

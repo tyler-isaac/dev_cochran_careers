@@ -87,6 +87,7 @@
 }
 
 .row6-container {
+  text-align: center;
 }
 
 .row6-container div {
@@ -136,6 +137,7 @@
   display: block;
   width: 40%;
   margin: 0 auto;
+  border-radius: 0;
 }
 
 .row10-container {
