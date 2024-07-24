@@ -24,6 +24,7 @@
   border-radius: 20px;
   width: 290px;
   height: 320px;
+  text-align: center;
 }
 
 .row2-container img {
@@ -190,6 +191,8 @@
 
   .row4-container div:last-child {
     margin: -150px auto 0 90px;
+    position: relative;
+    top: 10px;
   }
 
   .row5 {
@@ -304,10 +307,18 @@
   .row9 div {
     padding: 40px 100px;
     width: 80%;
-  }    
+  }
 
   .row10 img {
     width: 160px;
+  }
+
+  header {
+    margin-bottom: -300px;
+  }
+
+  .row1 {
+    padding-top: 100px;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -323,5 +334,13 @@
 
   .row9 div {
     width: 70%;
-  }   
+  }
+
+  .row1 {
+    padding-top: 50px;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
 }

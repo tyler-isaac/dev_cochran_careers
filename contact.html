@@ -99,13 +99,31 @@
                 </p>
                 <div class="location-wrapper">
                   <div>
-                    <img class="location-icon" src="https://di-uploads-pod6.dealerinspire.com/1cochran/uploads/2024/07/LocationIcon.svg" alt="location pin icon" />
+                    <a
+                      target="_blank"
+                      href="https://www.google.com/maps/dir/40.4248791,-80.00096/4520+William+Penn+Hwy,+Monroeville,+PA+15146/@40.4359522,-80.0382612,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8834ea0c1b86b549:0x2c029b216eb94dd3!2m2!1d-79.7465156!2d40.4374494?entry=ttu"
+                    >
+                      <img
+                        class="location-icon"
+                        src="https://di-uploads-pod6.dealerinspire.com/1cochran/uploads/2024/07/LocationIcon.svg"
+                        alt="location pin icon"
+                      />
+                    </a>
                     <p>4520 William Penn Hwy, Monroeville, PA 15146</p>
                   </div>
                   <hr class="hr1 d-block d-lg-none" />
                   <div class="vl d-none d-lg-block"></div>
                   <div>
-                    <img class="location-icon" src="https://di-uploads-pod6.dealerinspire.com/1cochran/uploads/2024/07/LocationIcon.svg" alt="location pin icon" />
+                    <a
+                      href="https://www.google.com/maps/dir/40.4249072,-80.0009091/7807+Market+St+%236,+Boardman,+OH+44512/@40.7090799,-80.9609653,9z/data=!3m1!4b1!4m19!1m8!3m7!1s0x8833fa44c0a4f627:0x24e6faba9b8459f7!2s7807+Market+St+%236,+Boardman,+OH+44512!3b1!8m2!3d41.0113627!4d-80.6618559!16s%2Fg%2F11n_z171vw!4m9!1m1!4e1!1m5!1m1!1s0x8833fa44c0a4f627:0x24e6faba9b8459f7!2m2!1d-80.6618559!2d41.0113627!3e0?entry=ttu"
+                      target="_blank"
+                    >
+                      <img
+                        class="location-icon"
+                        src="https://di-uploads-pod6.dealerinspire.com/1cochran/uploads/2024/07/LocationIcon.svg"
+                        alt="location pin icon"
+                      />
+                    </a>
                     <p>7807 Market St #6, Boardman, OH 44512</p>
                   </div>
                 </div>
@@ -114,21 +132,22 @@
           </div>
         </div>
       </div>
-      
-        <div class="row3">
-          <div id="map-container">
-            <iframe
-              id="map"
-              src="https://www.google.com/maps/d/embed?mid=1OvlXjgzmAIWdFkHy8sJpr-KvNQo5fK0&ehbc=2E312F"
-              frameborder="0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            >
-            </iframe>
-          </div>
+
+      <div class="row3">
+        <div id="map-container">
+          <iframe
+            id="map"
+            class="myIframe"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1OvlXjgzmAIWdFkHy8sJpr-KvNQo5fK0&ehbc=2E312F&noprof=1"
+            frameborder="0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          >
+          </iframe>
         </div>
-      
+      </div>
+
       <div class="body-container body-container2">
         <div>
           <div id="cta-component"></div>
@@ -144,4 +163,36 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script>
+    // Get all iframes with the class "myIframe"
+    var iframes = document.querySelectorAll(".myIframe");
+    var totalIframes = iframes.length;
+    var loadedIframes = 0;
+
+    // Function to check if all iframes are loaded
+    function checkAllIframesLoaded() {
+      loadedIframes++;
+      if (loadedIframes === totalIframes) {
+        // All iframes are loaded, apply inline styles
+        var style = document.createElement("style");
+        style.type = "text/css";
+        style.innerHTML = `
+                .i4ewOd-pzNkMb-haAclf { display: none !important; }
+            `; // Your CSS rules here
+
+        // Append the style element to the head of the document
+        document.head.appendChild(style);
+      }
+    }
+
+    // Attach load event listeners to all iframes
+    iframes.forEach(function (iframe) {
+      iframe.onload = checkAllIframesLoaded;
+    });
+
+    // Handle cases where there are no iframes
+    if (totalIframes === 0) {
+      checkAllIframesLoaded();
+    }
+  </script>
 </html>
