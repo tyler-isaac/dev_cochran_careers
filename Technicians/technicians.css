@@ -24,6 +24,10 @@
   padding: 60px 0;
 }
 
+.row2 h2 {
+  text-align: center;
+}
+
 .row2 p {
   text-align: start;
 }
