@@ -1,33 +1,28 @@
-const carouselTrack = document.querySelector(".carousel-track");
-const carouselItems = document.querySelectorAll(".carousel-item");
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-const itemCount = carouselItems.length;
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselInner = document.querySelector(".custom-carousel-inner");
+  const items = document.querySelectorAll(".custom-carousel-item");
+  const totalItems = items.length;
+  let currentIndex = 0;
 
-let currentIndex = 0; // Start from the first item
-
-function moveToNextSlide() {
-  if (currentIndex >= itemCount - 1) {
-    currentIndex = 0; // Move to the first slide
-  } else {
-    currentIndex++;
+  function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carouselInner.style.transform = `translateX(${offset}%)`;
   }
-  updateCarousel();
-}
 
-function moveToPrevSlide() {
-  if (currentIndex <= 0) {
-    currentIndex = itemCount - 1; // Move to the last slide
-  } else {
-    currentIndex--;
+  function goToNext() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
   }
-  updateCarousel();
-}
 
-function updateCarousel() {
-  const offset = -currentIndex * 100; // Ensure full scroll of each slide
-  carouselTrack.style.transform = `translateX(${offset}%)`;
-}
+  function goToPrev() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+  }
 
-prevButton.addEventListener("click", moveToPrevSlide);
-nextButton.addEventListener("click", moveToNextSlide);
+  document
+    .querySelector(".custom-carousel-next")
+    .addEventListener("click", goToNext);
+  document
+    .querySelector(".custom-carousel-prev")
+    .addEventListener("click", goToPrev);
+});
