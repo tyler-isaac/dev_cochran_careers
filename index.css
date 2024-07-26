@@ -14,6 +14,16 @@
   padding: 50px 0;
 }
 
+/* .video-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px 0;
+} */
+
+video {
+  border-radius: 20px;
+}
 
 @media only screen and (min-width: 480px) {
   .header-container {

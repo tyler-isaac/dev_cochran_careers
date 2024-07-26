@@ -1,17 +1,9 @@
-.video-wrapper {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-  padding: 20px 0;
-}
-
 .custom-carousel {
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-video {
-  border-radius: 20px;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto;
 }
 
 .custom-carousel-inner {
@@ -20,13 +12,14 @@ video {
 }
 
 .custom-carousel-item {
-  min-width: 100%;
+  flex: 0 0 100%; /* Each item takes the full width */
   box-sizing: border-box;
 }
 
 .custom-carousel-item video {
   width: 100%;
   height: auto;
+  display: block; /* Ensure the video is block-level to take full width */
 }
 
 .custom-carousel-prev,
@@ -34,18 +27,80 @@ video {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: none; /* Remove background color */
   border: none;
+  color: #fff;
   padding: 10px;
   cursor: pointer;
   z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
 }
 
 .custom-carousel-prev {
-  left: 10px;
+  left: 0px; /* Position inside the video container */
 }
 
 .custom-carousel-next {
-  right: 10px;
+  right: 0px; /* Position inside the video container */
+}
+
+.custom-carousel-prev::before,
+.custom-carousel-next::before {
+  content: "";
+  border: solid rgb(255, 255, 255); /* Default border color */
+  border-width: 0 4px 4px 0; /* Arrow size */
+  display: inline-block;
+  padding: 8px;
+  transition-duration: 0.3s; /* Smooth transition */
+}
+
+.custom-carousel-prev:hover::before,
+.custom-carousel-next:hover::before {
+  filter: drop-shadow(0px 0px 10px #000000); /* Drop shadow on hover */
+  border: solid rgb(202, 202, 202); /* Border color on hover */
+  content: "";
+  border-width: 0 4px 4px 0; /* Arrow size */
+  display: inline-block;
+  padding: 8px;
+}
+
+.custom-carousel-prev::before {
+  transform: rotate(135deg); /* Arrow pointing left */
+}
+
+.custom-carousel-next::before {
+  transform: rotate(-45deg); /* Arrow pointing right */
+}
+
+.custom-carousel-indicators {
+  position: relative;
+  margin-top: 20px; /* Space between carousel and indicators */
+  text-align: center;
+}
+
+.custom-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between indicators */
+  z-index: 10;
+}
+
+.custom-carousel-indicator {
+  width: 12px; /* Indicator size */
+  height: 12px; /* Indicator size */
+  background-color: #fff; /* Default indicator color */
+  border: 1px solid #e82430; /* Red border */
+  border-radius: 50%; /* Make the indicator circular */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth color transition */
+}
+
+.custom-carousel-indicator.active {
+  background-color: #e82430; /* Active indicator color */
+  border-color: #e82430; /* Border color for active indicator */
 }
