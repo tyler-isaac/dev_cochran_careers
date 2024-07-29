@@ -11,6 +11,14 @@ button.btn-close {
   z-index: 99999999;
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
 .parts-logo {
   filter: drop-shadow(0px 0px 10px #000000);
 }

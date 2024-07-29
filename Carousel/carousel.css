@@ -1,0 +1,215 @@
+.carousel-wrapper {
+  position: relative;
+  width: 80%; /* Adjust based on preference */
+  margin: auto;
+  overflow: hidden; /* Ensures nothing outside this container is visible */
+}
+
+.custom-carousel {
+  overflow: hidden; /* Hides anything outside the width of this container */
+  position: relative;
+  width: 100%;
+}
+
+.custom-carousel-track-container {
+  overflow: hidden; /* Ensures no scrollbar appears */
+  width: 100%;
+  position: relative;
+}
+
+.custom-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.custom-carousel-slide {
+  width: 100%; /* Each slide takes the full width of the viewable area */
+  flex-shrink: 0;
+}
+
+.custom-carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.custom-carousel-dots {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 10px 0;
+}
+
+.custom-carousel-dot {
+  display: inline-block;
+  width: 2px; /* Equal width and height for perfect circles */
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%; /* Makes the element a circle */
+  cursor: pointer;
+  border: 1px solid #e82430;
+}
+
+.custom-carousel-dot.current-dot {
+  background: #e82430;
+}
+
+.custom-carousel-button {
+  background: rgba(0, 0, 0, 0.7); /* Darker background for more elegance */
+  border: none;
+  color: white;
+  padding: 3px 14px;
+  font-size: 26px; /* Larger font size for better readability */
+  cursor: pointer;
+  position: relative;
+  top: -110px;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.custom-carousel-button:hover {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.85
+  ); /* Slightly darker on hover for interactive feel */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Increased shadow on hover for more depth */
+}
+
+.custom-carousel-button-left {
+  left: -99px; /* Position adjusted for visibility */
+}
+
+.custom-carousel-button-right {
+  right: -99px; /* Position adjusted for visibility */
+}
+
+/* modal */
+.modal-content {
+  width: auto;
+}
+
+.modal-dialog-centered {
+  justify-content: center;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #e82430;
+  --bs-btn-border-color: #e82430;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a71720;
+  --bs-btn-hover-border-color: #a71720;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-bg: #e82430;
+  --bs-btn-active-border-color: #e82430;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e82430;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.custom-carousel-slide .btn-primary,
+.custom-carousel-slide .btn {
+  --bs-btn-bg: none !important;
+  --bs-btn-border-color: none !important;
+  --bs-btn-hover-bg: none !important;
+  --bs-btn-hover-border-color: none !important;
+  --bs-btn-active-bg: none !important;
+  --bs-btn-active-border-color: none !important;
+  --bs-btn-disabled-bg: none !important;
+  --bs-btn-disabled-border-color: none !important;
+  --bs-btn-padding-x: 0 !important;
+  --bs-btn-padding-y: 0 !important;
+}
+
+video {
+  width: 270px;
+}
+
+/* modal */
+
+@media only screen and (min-width: 480px) {
+  .custom-carousel-button-right {
+    right: -153px;
+  }
+  .custom-carousel-button-left {
+    left: -153px;
+  }
+
+  .custom-carousel-button {
+    top: -150px;
+  }
+
+  video {
+    width: 420px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  video {
+    width: 690px;
+  }
+
+  .custom-carousel-button {
+    top: -230px;
+  }
+
+  .custom-carousel-button-right {
+    right: -289px;
+  }
+  .custom-carousel-button-left {
+    left: -289px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .custom-carousel-button-right {
+    right: -379px;
+  }
+  .custom-carousel-button-left {
+    left: -379px;
+  }
+
+  .custom-carousel-button {
+    top: -300px;
+  }
+
+  video {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .custom-carousel-button {
+    top: -350px;
+  }
+
+  .custom-carousel-button-right {
+    right: -454px;
+  }
+
+  .custom-carousel-button-left {
+    left: -454px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .custom-carousel-button-right {
+    right: -554px;
+  }
+
+  .custom-carousel-button-left {
+    left: -553px;
+  }
+
+  .custom-carousel-button {
+    top: -440px;
+  }
+}
