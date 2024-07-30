@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slides = Array.from(track.children);
   const nextButton = document.querySelector(".custom-carousel-button-right");
   const prevButton = document.querySelector(".custom-carousel-button-left");
-  const dots = document.querySelectorAll(".custom-carousel-dot1");
+  const dots = document.querySelectorAll(".custom-carousel-dot");
 
   let currentIndex = 0; // Start with the first slide active
 
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     slides[targetIndex].classList.add("current-slide");
 
     // Update dots
-    dots[currentIndex].classList.remove("current-dot1");
-    dots[targetIndex].classList.add("current-dot1");
+    dots[currentIndex].classList.remove("current-dot");
+    dots[targetIndex].classList.add("current-dot");
 
     currentIndex = targetIndex; // Update the current index to the new index
   }
