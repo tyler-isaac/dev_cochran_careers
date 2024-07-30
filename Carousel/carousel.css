@@ -46,8 +46,8 @@
 [type="reset"],
 [type="submit"],
 button {
-  appearance: none;
-  -webkit-appearance: none;
+  appearance: none !important;
+  -webkit-appearance: none !important;
 }
 
 div.custom-carousel-indicators {
@@ -58,6 +58,10 @@ div.custom-carousel-indicators {
   padding: 10px 0 !important;
 }
 
+.custom-carousel-indicators button {
+  width: 15px !important;
+}
+
 button.custom-carousel-indicator {
   display: inline-block !important;
   width: 15px !important;
@@ -66,7 +70,8 @@ button.custom-carousel-indicator {
   border-radius: 50% !important;
   cursor: pointer !important;
   border: 1px solid #e82430 !important;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
+  border-image-repeat: unset!important;
 }
 
 button.current-indicator {
