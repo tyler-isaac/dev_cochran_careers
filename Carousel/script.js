@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     slides[targetIndex].classList.add("current-slide");
 
     // Update dots
-    dots[currentIndex].classList.remove("current-dot");
-    dots[targetIndex].classList.add("current-dot");
+    dots[currentIndex].classList.remove("current-dot1");
+    dots[targetIndex].classList.add("current-dot1");
 
     currentIndex = targetIndex; // Update the current index to the new index
   }
