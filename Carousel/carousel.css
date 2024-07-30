@@ -44,7 +44,7 @@
   padding: 10px 0;
 }
 
-.custom-carousel-dot {
+.custom-carousel-dots .custom-carousel-dot {
   display: inline-block;
   width: 2px; /* Equal width and height for perfect circles */
   height: 12px;
