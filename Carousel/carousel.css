@@ -36,8 +36,18 @@
   display: block;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box !important;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 div.custom-carousel-indicators {
