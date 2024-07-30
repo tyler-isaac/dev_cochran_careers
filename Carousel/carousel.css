@@ -44,7 +44,7 @@
   padding: 10px 0;
 }
 
-.custom-carousel-dots .custom-carousel-dot {
+.custom-carousel-dot1 {
   display: inline-block;
   width: 2px; /* Equal width and height for perfect circles */
   height: 12px;
@@ -54,7 +54,7 @@
   border: 1px solid #e82430;
 }
 
-.custom-carousel-dot.current-dot {
+.custom-carousel-dot1.current-dot {
   background: #e82430;
 }
 
