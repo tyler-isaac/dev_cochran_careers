@@ -46,25 +46,17 @@ div.custom-carousel-indicators {
 
 button.custom-carousel-indicator {
   display: inline-block !important;
-  width: 2px !important;
-  height: 12px !important;
+  width: 15px !important;
+  height: 15px !important;
   margin: 5px !important;
   border-radius: 50% !important;
   cursor: pointer !important;
   border: 1px solid #e82430 !important;
-  box-sizing: unset;
-  text-rendering: unset;
+  box-sizing: border-box;
 }
 
 button.current-indicator {
   background: #e82430 !important;
-}
-
-[type="button"],
-[type="reset"],
-[type="submit"],
-button {
-  appearance: unset;
 }
 
 .custom-carousel-button {
