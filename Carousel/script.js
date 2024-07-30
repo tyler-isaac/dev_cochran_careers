@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slides = Array.from(track.children);
   const nextButton = document.querySelector(".custom-carousel-button-right");
   const prevButton = document.querySelector(".custom-carousel-button-left");
-  const dots = document.querySelectorAll(".custom-carousel-dot");
+  const dots = document.querySelectorAll(".custom-carousel-dot1");
 
   let currentIndex = 0; // Start with the first slide active
 
