@@ -36,6 +36,10 @@
   display: block;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box !important;
+}
+
 div.custom-carousel-indicators {
   text-align: center !important;
   position: absolute !important;
