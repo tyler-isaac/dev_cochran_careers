@@ -36,7 +36,7 @@
   display: block;
 }
 
-/* .custom-carousel-indicators {
+.custom-carousel-indicators {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -56,7 +56,7 @@
 
 .custom-carousel-indicator.current-indicator {
   background: #e82430;
-} */
+}
 
 .custom-carousel-dot {
   border-bottom-left-radius: 0 !important;
